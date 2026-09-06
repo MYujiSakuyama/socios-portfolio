@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>og — fonte da imagem de compartilhamento</title>
+<style>
+@font-face{font-family:Archivo;src:url(f/archivo.woff2) format("woff2");font-weight:400 800}
+@font-face{font-family:JBMono;src:url(f/jbmono.woff2) format("woff2");font-weight:400 600}
+html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:#0B0A09;color:#F4F1EA;font-family:Archivo,sans-serif}
+.og{position:relative;width:1200px;height:630px;padding:64px 72px;box-sizing:border-box;
+  background:radial-gradient(60% 55% at 12% 20%,rgba(232,154,60,.16),transparent 70%),radial-gradient(50% 50% at 92% 88%,rgba(245,198,61,.14),transparent 70%),#0B0A09}
+.grid{position:absolute;inset:0;background:linear-gradient(rgba(232,154,60,.07) 1px,transparent 1px) 0 0/34px 34px,linear-gradient(90deg,rgba(232,154,60,.07) 1px,transparent 1px) 0 0/34px 34px;
+  mask-image:radial-gradient(70% 70% at 30% 30%,#000 20%,transparent 80%)}
+.mark{display:flex;align-items:center;gap:14px;font-weight:760;font-size:30px;letter-spacing:-.03em;position:relative}
+.tape{width:16px;height:28px;border-radius:3px;background:repeating-linear-gradient(to bottom,#0B0A09 0 1px,transparent 1px 6px) 0 0/6px 100% no-repeat,repeating-linear-gradient(to bottom,#0B0A09 0 1px,transparent 1px 28px) 0 0/12px 100% no-repeat,#F5C63D}
+.tag{font-family:JBMono,monospace;font-size:16px;letter-spacing:.2em;text-transform:uppercase;color:#746D62;position:relative}
+h1{position:relative;margin:54px 0 0;font-size:86px;line-height:.98;letter-spacing:-.045em;font-weight:760;max-width:15ch}
+h1 b{color:#F5C63D;font-weight:760}
+.foot{position:absolute;left:72px;right:72px;bottom:60px;display:flex;justify-content:space-between;align-items:flex-end}
+.cta{display:inline-flex;align-items:center;gap:14px;background:#F5C63D;color:#0B0A09;font-weight:700;font-size:24px;padding:20px 30px;border-radius:10px;letter-spacing:-.015em}
+.cta i{font-family:JBMono,monospace;font-style:normal}
+.rail{position:absolute;right:0;top:0;bottom:0;width:46px;border-left:1px solid #2A2620;
+  background:repeating-linear-gradient(to bottom,#3A342B 0 1px,transparent 1px 12px) right/9px 100% no-repeat,repeating-linear-gradient(to bottom,#3A342B 0 1px,transparent 1px 60px) right/17px 100% no-repeat}
+.rail::after{content:"";position:absolute;right:0;top:0;width:3px;height:62%;background:#F5C63D;box-shadow:0 0 14px rgba(245,198,61,.6)}
+</style></head>
+<body><div class="og"><div class="grid"></div><div class="rail"></div>
+<div class="mark"><span class="tape"></span>Sócios <span class="tag" style="margin-left:18px">Londrina · Paraná</span></div>
+<h1>A gente entrega a página <b>e o número</b> que ela deu.</h1>
+<div class="foot"><span class="tag">cole seu link · raio-x de graça · por escrito</span><span class="cta">Pedir o Raio-X <i>→</i></span></div>
+</div></body></html>
